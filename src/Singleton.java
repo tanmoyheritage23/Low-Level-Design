@@ -1,9 +1,23 @@
+/* Double Locking Method */
 
 public class Singleton {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	
+	private static Singleton conObject;
+	
+	private Singleton() {
+		
 	}
-
+	
+	public static Singleton getInstance() {
+		
+		if(conObject == null) {
+			synchronized(Singleton.class) {
+				if(conObject == null) {
+					conObject = new Singleton();
+				}
+			}
+		}
+		
+		return conObject;
+	}
 }
