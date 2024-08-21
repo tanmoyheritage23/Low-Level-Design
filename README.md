@@ -3,3 +3,4 @@ This repository contains low level design (LLD) resources to improve object orie
 
 ## Design Patterns
 - [Singleton Pattern](https://refactoring.guru/design-patterns/singleton)
+- [Factory Pattern](https://refactoring.guru/design-patterns/factory-method)
